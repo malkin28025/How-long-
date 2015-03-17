@@ -1,5 +1,9 @@
 class VictimsController < ApplicationController
   def index
-    @victim = victim.all
   end
+
+  def test
+  end
+
+  
 end
