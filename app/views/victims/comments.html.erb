@@ -1,13 +1,13 @@
-<h1>Add, Update, Comment</h1>
+<h1>Comments/Suggestions</h1>
 
 <%= form_for @victim do |f| %>
-  <%= f.label :name %>
+  <%= f.label :posted_by %>
   <%= f.text_field :name %>
   <br/>
   <%= f.label :email_address %>
   <%= f.text_area :email_address %>
   <br/>
-  <%= f.label :comment %>
+  <%= f.label :comments_suggestions %>
   <%= f.text_area :comment, rows: 40, cols: 35 %>
   <br/>
   <%= f.submit 'SUBMIT' %>

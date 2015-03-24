@@ -1,0 +1,23 @@
+<h1>Update Memorial</h1>
+
+<%= form_for @victim do |f| %>
+  <%= f.label :posted_by %>
+  <%= f.text_field :name %>
+  <br/>
+  <%= f.label :email_address %>
+  <%= f.text_area :email_address %>
+  <br/>
+  <%= f.label :name_of_departed %>
+  <%= f.text_field :name %>
+  <br/>
+  <%= f.label :incident_date %>
+  <%= f.text_area :date %>
+  <br/>
+  <%= f.label :incident_state %>
+  <%= f.text_area :state %>
+  <br/>
+  <%= f.label :incident_update %>
+  <%= f.text_area :comment, rows: 40, cols: 35 %>
+  <br/>
+  <%= f.submit 'SUBMIT' %>
+<% end %>
